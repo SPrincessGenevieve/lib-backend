@@ -10,7 +10,7 @@ class Book(models.Model):
     book_total_copies = models.IntegerField()
     book_available_copies = models.IntegerField()
     book_desc = models.TextField()
-    book_image = models.ImageField(upload_to='books/')
+    book_image = models.TextField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     borrowing_period = models.IntegerField(default=7)
     book_date_added = models.DateTimeField(default=now, editable=False)
