@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'books',
     'category',
     'patron',
+    'accounts',
     'borrowed_book',
     'tracking'
     
